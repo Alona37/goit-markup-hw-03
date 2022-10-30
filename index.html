@@ -5,7 +5,6 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Студія</title>
-		<link rel="stylesheet" href="./css/styles.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -16,13 +15,14 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
 		/>
+		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
 		<!--Секція шапка-->
-		<header class="flex">
+		<header class="header">
 			<div class="flex container">
 				<nav class="flex site-nav">
-					<a class="flex logo" href="./index.html">
+					<a class="logo" href="./index.html">
 						<span class="web">Web</span>
 						Studio
 					</a>
@@ -55,14 +55,14 @@
 		</header>
 		<main>
 			<!--Секція Герой-->
-			<section class="hero">
-				<div class="hero-content">
+			<section class="section hero">
+				<div class="container">
 					<h1 class="hero-headline">Ефективні рішення для вашого бізнесу</h1>
 					<button class="hero-btn" type="button">Замовити послугу</button>
 				</div>
 			</section>
 			<!--Секція з особливостями-->
-			<section class="features">
+			<section class="section features">
 				<div class="container">
 					<h2 class="title-features">Особливості</h2>
 					<ul class="flex features-list">
@@ -97,7 +97,7 @@
 				</div>
 			</section>
 			<!--Секція Чим ми займаємося-->
-			<section class="our-job">
+			<section class="section our-job">
 				<div class="container">
 					<h2 class="section-tittle">Чим ми займаємося</h2>
 					<ul class="flex our-job-list">
@@ -129,7 +129,7 @@
 				</div>
 			</section>
 			<!--Секція Команда-->
-			<section class="our-team">
+			<section class="section our-team">
 				<div class="container">
 					<h2 class="section-tittle">Наша команда</h2>
 					<ul class="flex our-team-list">
@@ -187,24 +187,24 @@
 		</main>
 		<!--Секція Підвал-->
 		<footer class="footer">
-			<div class="footer-data conteiner">
-				<a class="flex logo logo-footer" href="./index.html">
+			<div class="container footer-container">
+				<a class="logo logo-footer" href="./index.html">
 					<span class="web">Web</span>
 					Studio
 				</a>
 				<address class="footer-address">
 					<ul>
-						<li>
+						<li class="footer-list-item">
 							<a class="city-address" href="">
 								м. Київ, пр-т Лесі Українки, 26
 							</a>
 						</li>
-						<li>
+						<li class="footer-list-item">
 							<a class="contacts-footer" href="mailto:info@devstudio.com">
 								info@devstudio.com
 							</a>
 						</li>
-						<li>
+						<li class="footer-list-item">
 							<a class="contacts-footer" href="tel:+380961111111">
 								+38 096 111 11 11
 							</a>

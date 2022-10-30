@@ -7,10 +7,12 @@
 	--font-weight-regular: 500;
 	--font-size-main: 16px;
 }
-*,
-a,
 ul,
-li h1 h2 h3 h4 p button {
+h1,
+h2,
+h3,
+h4,
+p {
 	margin: 0;
 	padding: 0;
 }
@@ -27,9 +29,15 @@ body {
 }
 
 .container {
-	min-width: 1230px;
+	width: 1200px;
 	padding: 0 15px;
-	margin: 0 215px;
+	margin: 0 auto;
+}
+.section {
+	padding: 94px 0;
+	width: 1600px;
+}
+.header {
 }
 .flex {
 	display: flex;
@@ -47,7 +55,7 @@ ul {
 	font-family: Raleway;
 	font-weight: var(--font-weght-bold);
 	font-size: 26px;
-	font-weight: ;
+	font-weight: 700;
 	line-height: 1.192;
 	padding: 24px 0 25px;
 	margin-right: 93px;
@@ -61,7 +69,6 @@ ul {
 	letter-spacing: 0.02em;
 	display: flex;
 	align-items: center;
-	margin-right: 344px;
 }
 .nav-list-item {
 	padding: 32px 0;
@@ -70,7 +77,9 @@ ul {
 .contacts-item {
 	padding: 32px 0;
 }
-
+.contacts-list-top {
+	margin-left: auto;
+}
 .nav-list-item:nth-child(n + 2) {
 	margin-left: 50px;
 }
@@ -105,13 +114,9 @@ ul {
 .hero {
 	text-align: center;
 	background: #2f303a;
-	width: 1600px;
+	padding: 200px 0;
+}
 
-	padding: 200px 452px;
-}
-.hero-content {
-	width: 696px;
-}
 .hero-headline {
 	text-transform: uppercase;
 	font-size: 44px;
@@ -120,7 +125,8 @@ ul {
 	font-weight: 900;
 	letter-spacing: 0.06em;
 	text-align: center;
-	/* padding: 200px 280px 452px; */
+	width: 696px;
+	margin: 0 auto;
 }
 .hero-btn {
 	font-family: inherit;
@@ -130,11 +136,12 @@ ul {
 	letter-spacing: 0.06em;
 	text-align: center;
 	line-height: 1.88;
-	height: 50px;
-	width: 216px;
+	padding: 10px 32px;
 	color: var(--main-white);
 	background: var(--main-blue);
 	margin-top: 40px;
+	box-shadow: 0px 4px 4px 0px #00000026;
+	border: none;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -143,11 +150,8 @@ ul {
 	cursor: pointer;
 }
 /* Особливості */
-.features {
-	padding: 94px 0;
-}
 .title-features {
-	visibility: hidden;
+	display: none;
 }
 .features-list-item:nth-child(n + 2) {
 	margin-left: 30px;
@@ -164,7 +168,7 @@ ul {
 }
 /* <!--Секція Чим ми займаємося--> */
 .our-job {
-	padding-bottom: 94px;
+	padding-top: 0;
 }
 .job-demo:nth-child(n + 2) {
 	margin-left: 30px;
@@ -176,9 +180,9 @@ ul {
 	margin-bottom: 50px;
 }
 /*Наша команда */
+
 .our-team {
 	text-align: center;
-	padding: 94px 0;
 	background: #f5f4fa;
 }
 
@@ -207,21 +211,22 @@ ul {
 	font-size: var(--font-size-main);
 	line-height: 1.187;
 	color: var(--main-grey);
+	font-weight: 400;
 }
 
 /* Футер */
 .footer {
 	background: #2f303a;
 	width: 1600px;
+	padding: 60px 0;
 }
-.footer-data {
-	padding-top: 60px;
-	padding-bottom: 60px;
-	padding-left: 215px;
-	padding-right: 1154px;
-}
+
 .footer-address {
 	margin-top: 20px;
+}
+
+.footer-list-item:nth-child(n + 2) {
+	margin-top: 9px;
 }
 .city-address {
 	line-height: 1.71;
@@ -236,7 +241,6 @@ ul {
 }
 .contacts-footer {
 	color: rgba(255, 255, 255, 0.6);
-	line-height: 24px;
 	font-style: normal;
 	line-height: 1.71;
 	text-align: left;

@@ -5,7 +5,6 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Портфоліо</title>
-		<link rel="stylesheet" href="./css/styles.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
 			rel="stylesheet"
@@ -14,13 +13,14 @@
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
 		/>
+		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
 		<!--Шапка-->
-		<header class="flex">
+		<header class="header">
 			<div class="flex container">
 				<nav class="flex site-nav">
-					<a class="flex logo" href="./index.html">
+					<a class="logo" href="./index.html">
 						<span class="web">Web</span>
 						Studio
 					</a>
@@ -52,7 +52,7 @@
 			</div>
 		</header>
 		<main>
-			<section class="portfolio">
+			<section class="section">
 				<div class="container">
 					<h1 class="main-headline">Tech main</h1>
 					<ul class="filters flex">
@@ -189,24 +189,24 @@
 		</main>
 		<!--Підвал-->
 		<footer class="footer">
-			<div class="footer-data conteiner">
-				<a class="flex logo logo-footer" href="./index.html">
+			<div class="container footer-container">
+				<a class="logo logo-footer" href="./index.html">
 					<span class="web">Web</span>
 					Studio
 				</a>
 				<address class="footer-address">
 					<ul>
-						<li>
+						<li class="footer-list-item">
 							<a class="city-address" href="">
 								м. Київ, пр-т Лесі Українки, 26
 							</a>
 						</li>
-						<li>
+						<li class="footer-list-item">
 							<a class="contacts-footer" href="mailto:info@devstudio.com">
 								info@devstudio.com
 							</a>
 						</li>
-						<li>
+						<li class="footer-list-item">
 							<a class="contacts-footer" href="tel:+380961111111">
 								+38 096 111 11 11
 							</a>
